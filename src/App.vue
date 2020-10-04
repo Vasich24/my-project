@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <my-baner />
+    <hr />
+    <weather />
+    <hr />
+    <table-al />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyBaner from "./components/MyBaner";
+import Weather from "./components/Weather";
+import TableAl from "./components/TableAl";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MyBaner,
+    Weather,
+    TableAl,
+  },
+};
 </script>
 
 <style>
